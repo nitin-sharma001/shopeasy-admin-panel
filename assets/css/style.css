@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+
 *{padding:0px; margin:0px;}
 
 /********************************************Common css********************************************/
@@ -66,33 +67,73 @@ h6{font-size: 14px;}
 
 .admin-panel{ padding:70px 100px 0 100px; }
 
+@media (max-width : 768px) {
+  .admin-panel{ padding: 20px 5px; }
+}
+
 /********************************************Header css********************************************/
 
 #header .right-header .badge{ top: -10px; left:10px; padding:5px 8px 5px 8px; font-size: 10px; }
 
+@media (max-width : 768px) {
 
+#outer-bg .blob {  width: 300px;  height: 400px;  top: -20%;  left: -15%;  z-index: -1;  background: linear-gradient(180deg, #9790B9, #9790B9 100%);  animation: move 2s infinite alternate;  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1); border-radius: 50%;}
+#outer-bg .blob2 {  display: none; }
+
+
+  #header .left-header h5{ display: none; }
+  #header .right-header ul li{ display: none; }
+}
 /********************************************SideBar css********************************************/
 
 
 #main .nav-bar-left{  overflow: auto;  }
 #main .nav-bar-left ul li a{ margin-bottom: -7px;  }
-
 #sidebar .btn-toggle{ left: 70%; top: 2%;  }
 
+@media (max-width : 768px) {
+  /* #sidebar { padding: 20px 10px;} */
+  #sidebar .btn-toggle{ left: 4%; top: 4%; }
+  #main .nav-bar-left .nav{ display: none; }
+}
 /********************************************Main css********************************************/
-
 #main #main-right-container{ overflow: auto; }
 
+@media (max-width : 768px) {
+
+#main-right-container #numbers{max-width: 100%;  padding-top: 10px !important; padding-right: 3% !important; } 
+#main-right-container #numbers .cards-container {overflow-x: auto; width: 100%; white-space: nowrap;   }
+#main-right-container #numbers .cards-container .num-card {   margin-left: 0px !important; margin-top: 20px; }
+#main-right-container #numbers .cards-container .num-card .details{  gap: 10px !important; }
+
+#main-right-container #main-cards  { margin-top: 0% !important; }
+#main-right-container #main-cards .cards-container { margin: 0% 0% !important; }
+#main-right-container #main-cards .cards-container .main-card{min-width: 100% !important; margin-left:20px !important;margin-top: 20px !important;  padding: 10px 0 !important; }
+
+}
 ::-webkit-scrollbar {  width: 0%; }
 
 .box-card:hover{ transform: scale(1.1); transition: all ease 0.5s;  }
 
 /********************************************Graphs css********************************************/
 
-#graphs .cards-container .graph-1 #orderGraph{ max-width: 460px; max-height: 170px; }
+#graphs .cards-container .graph-1 #orderGraph{ max-width: 420px; max-height: 170px; }
 #graphs .cards-container .graph-2 #orderBarChart{min-height: 245px; max-width: 460px; }
 
 
 
+@media (max-width : 768px) {
+#main-right-container #graphs { padding: 0% !important; }
+#main-right-container #graphs .graph-card{ padding: 10px !important; margin-left: 5% !important; margin: 2% !important; }
+#main-right-container #graphs .graph-card .heading h5{ margin-left: 64px !important; }
 
+#main-right-container #graphs .graph-1{margin-top: 20px !important; margin-left: 10px !important; width: 95%;}
+#main-right-container #graphs .graph-1 .legend  h4, span, .graph-2 .legend  h4, span{ margin-left: 2px !important; font-size: 12px;}
+#main-right-container #graphs .graph-2{ margin-left: 10px !important; width: 95%; }
 
+.category-card {margin-top: 5% !important; padding: 10px !important; margin-left: 2% !important;}
+.category-card .heading h4{ font-size: 16.5px; }
+
+#graphs .cards-container .graph-2 #orderBarChart{min-height: 172px; max-width: 460px; }
+
+}
