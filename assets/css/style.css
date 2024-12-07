@@ -85,10 +85,12 @@ h6{font-size: 14px;}
 
 ::-webkit-scrollbar {  width: 0%; }
 
+.box-card:hover{ transform: scale(1.1); transition: all ease 0.5s;  }
+
 /********************************************Graphs css********************************************/
 
 #graphs .cards-container .graph-1 #orderGraph{ max-width: 460px; max-height: 170px; }
-#graphs .cards-container .graph-2 #orderBarChart{min-height: 245px; max-width: 487px; }
+#graphs .cards-container .graph-2 #orderBarChart{min-height: 245px; max-width: 460px; }
 
 
 

@@ -19,14 +19,22 @@
             <header id="header" class=" bg-wheat  tb-pad border-bottom">
                 <div class="container-fluid ">
                     <div class="fleft left-header d-flex justify-content-between align-items-center">
-                        <a class=" ps-2 pt-1 me-5 fleft navbar-brand d-flex justify-content-between align-items-end" href="#"><h2 class="text-purple fleft fw-bold">SHOP</h2><span class="h3 fleft text-gray">easy</span></a>
+                        <a class=" ps-2 pt-1 me-5 fleft navbar-brand d-flex justify-content-between align-items-end box-card" href="#"><h2 class="text-purple fleft fw-bold">SHOP</h2><span class="h3 fleft text-gray">easy</span></a>
                         <h5 class="text-gray mt-4 fw-normal">Buy anything from anywhere</h5>
                     </div>
                     <div class="fright right-header  me-4">
                         <ul class="d-flex justify-content-between align-items-center gap-4">
                             <li><a href="#" class="text-gray ">Visit Site</a></li>
                             <li><a href="#" class="text-gray ">Marketplaces</a></li>
-                            <li><a href="#" class="text-gray ">Administrator <i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="dropdown"><a href="#" class="text-gray dropdown-toggle" data-bs-toggle="dropdown">Administrator </a>
+                                <ul class="dropdown-menu bg-wheat">
+                                    <li><a href="#" class="dropdown-item text-gray">Item 1</a></li>
+                                    <li><hr class="dropdown-divider"></hr></li>
+                                    <li><a href="#" class="dropdown-item text-gray">Item 2</a></li>
+                                    <li><hr class="dropdown-divider"></hr></li>
+                                    <li><a href="#" class="dropdown-item text-gray">Item 3</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <div class="fright position-relative justify-content-between d-flex align-items-center gap-4 h5 text-gray"><i class="ri-notification-2-line"><span class="badge position-absolute  bg-danger  rounded-circle">1</span></i><i class="ri-settings-4-fill "></i></div>
                     </div>
@@ -36,49 +44,49 @@
 
             <main id="main">
                 <section class="fleft bg-white nav-bar-left text-gray border-end position-relative" id="sidebar">
-                    <a href="#" class="h4 btn-toggle text-gray position-absolute"><i class="ri-menu-5-line"></i></a>
+                    <a href="#" class="h4 btn-toggle text-gray position-absolute"><i class="ri-menu-line"></i></a>
                     <ul class="nav flex-column mt-5 gap-2 ms-3 me-3 mb-5 pb-5 pt-3 ">
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 " href="#"><i class="ri-file-3-fill h4"></i> <h5 class="fw-normal d-none">Files</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 " href="#"><i class="ri-bookmark-line h4"></i><h5 class="fw-normal d-none">Catalog</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3" href="#"><i class="ri-user-3-fill h4"></i><h5 class="fw-normal d-none">User</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3" href="#"><i class="ri-shopping-basket-fill h4"></i><h5 class="fw-normal d-none">Order</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3" href="#"><i class="ri-user-3-fill h4"></i><h5 class="fw-normal d-none">Common</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 " href="#"><i class="ri-money-dollar-circle-line h4"></i><h5 class="fw-normal d-none">Payment</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3" href="#"><i class="ri-flight-takeoff-line h4"></i><h5 class="fw-normal d-none">Shipping</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3  " href="#"><i class="ri-gift-2-fill h4"></i><h5 class="fw-normal d-none">Coupon</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 " href="#"><i class="ri-money-dollar-circle-fill h4"></i><h5 class="fw-normal d-none">Tax</h5></a></li>
-                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3 " href="#"><i class="ri-amazon-fill h4"></i><h5 class="fw-normal d-none">Amazon</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3  box-card" href="#"><i class="ri-file-3-fill h4"></i> <h5 class="fw-normal d-none">Files</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3  box-card" href="#"><i class="ri-bookmark-line h4"></i><h5 class="fw-normal d-none">Catalog</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 box-card" href="#"><i class="ri-user-3-fill h4"></i><h5 class="fw-normal d-none">User</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3 box-card" href="#"><i class="ri-shopping-basket-fill h4"></i><h5 class="fw-normal d-none">Order</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3 box-card" href="#"><i class="ri-user-3-fill h4"></i><h5 class="fw-normal d-none">Common</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3  box-card" href="#"><i class="ri-money-dollar-circle-line h4"></i><h5 class="fw-normal d-none">Payment</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3 box-card" href="#"><i class="ri-flight-takeoff-line h4"></i><h5 class="fw-normal d-none">Shipping</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3  box-card " href="#"><i class="ri-gift-2-fill h4"></i><h5 class="fw-normal d-none">Coupon</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column  align-items-center gap-3 box-card " href="#"><i class="ri-money-dollar-circle-fill h4"></i><h5 class="fw-normal d-none">Tax</h5></a></li>
+                        <li class="nav-item"><a class="nav-link text-gray d-flex flex-column align-items-center gap-3 box-card " href="#"><i class="ri-amazon-fill h4"></i><h5 class="fw-normal d-none">Amazon</h5></a></li>
                     </ul>
                 </section>
 
                 <section id="main-right-container" class="bg-wheat">
                     <section id="numbers" class="tb-pad p-4 pe-5 pt-5 ps-2  fleft">
                         <div class="cards-container d-flex ps-2 ms-1">
-                            <div class="fleft num-card ms-5  border-start border-3">
+                            <div class="fleft box-card ms-5  border-start border-3">
                                 <div class="details ps-4 p-2 pt-3 text-gray d-flex flex-column gap-1">
                                     Categories
                                     <div class="desc h2">20 <span class="h6 fw-bold">Currently</span> </div>
                                 </div>
                             </div>
-                            <div class="fleft num-card ms-5 border-start border-3">
+                            <div class="fleft box-card ms-5 border-start border-3">
                                 <div class="details ps-4 p-2 pt-3 text-gray d-flex flex-column gap-1">
                                     Consumers
                                     <div class="desc h2">7000 </div>
                                 </div>
                             </div>
-                            <div class="fleft num-card ms-5 border-start border-3">
+                            <div class="fleft box-card ms-5 border-start border-3">
                                 <div class="details ps-4 p-2 pt-3 text-gray d-flex flex-column gap-1">
                                     Products
                                     <div class="desc h2">35012 </div>
                                 </div>
                             </div>
-                            <div class="fleft num-card ms-5 border-start border-3">
+                            <div class="fleft box-card ms-5 border-start border-3">
                                 <div class="details ps-4 p-2 pt-3 text-gray d-flex flex-column gap-1">
                                     Total Orders
                                     <div class="desc h2">78 <span class="h6 fw-bold">Per Hour</span> </div>
                                 </div>
                             </div>
-                            <div class="fleft num-card ms-5  border-start border-3">
+                            <div class="fleft box-card ms-5  border-start border-3">
                                 <div class="details ps-4 p-2 pt-3 text-gray d-flex flex-column gap-1">
                                     Total Sales Drop
                                     <div class="desc h2">28 <span class="h6 fw-bold">Per Hour</span> </div>
@@ -89,16 +97,16 @@
 
                     <section id="main-cards" class="bg-wheat tb-pad mt-5 fleft">
                         <div class="cards-container ms-5 ps-1 me-4 pe-5 ">
-                            <div class="fleft p-3 text-gray ms-3 item-shadow border-start border-4 border-primary">
-                                <h4 class="h6 ms-2 me-3 pe-2 mt-3 mb-3 d-flex justify-content-center align-items-center">Total Sales Graph</h4>
+                            <div class="fleft  p-3 text-gray ms-3 item-shadow border-start border-4 border-primary box-card">
+                                <h4 class="h6 ms-2 me-3 pe-2 mt-3 mb-3 d-flex justify-content-center align-items-center ">Total Sales Graph</h4>
                             </div>
-                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-secondary">
+                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-secondary box-card">
                                 <h4 class="h6 ms-2 me-3 pe-2 mt-3 mb-3 d-flex justify-content-center align-items-center">Partners Commission</h4>
                             </div>
-                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-success">
+                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-success box-card">
                                 <h4 class="h6 ms-2 me-3 pe-2 mt-3 mb-3 d-flex justify-content-center align-items-center">Stock Availability</h4>
                             </div>
-                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-info">
+                            <div class="fleft p-3 text-gray ms-5 item-shadow border-start border-4 border-info box-card">
                                 <h4 class="h6 ms-2 me-3 pe-2 mt-3 mb-3 d-flex justify-content-center align-items-center">Amazon Service</h4>
                             </div>
                         </div>
@@ -106,7 +114,7 @@
 
                     <section id="graphs" class="bg-wheat tb-pad p-5 mt-5 fleft">
                         <div class="cards-container ">
-                            <div class="fleft desc-card ms-4 d-flex flex-column gap-2 item-shadow p-4 rounded-2">
+                            <div class="fleft ms-4 d-flex flex-column gap-2 item-shadow p-4 rounded-2">
                                 <div class="text-gray fw-bold heading "><h4 class="fleft">Top 5 Categories | <span class="fw-normal"> This Month</span></h4> <h5 class="fright h5 ms-5">Total</h5> </div>
                                 <div class="clearfix"></div>
                                 <div class="card-body">
@@ -139,7 +147,7 @@
                                 </div>      
                                 <canvas id="orderBarChart"></canvas>
                             </div>
-                            <div class="fleft category-card mt-5 ms-4 d-flex flex-column gap-1 item-shadow p-4 rounded-2">
+                            <div class="fleft category-card mt-5 ms-5 d-flex flex-column gap-1 item-shadow p-4 rounded-2">
                                 <div class="text-gray fw-bold heading d-flex gap-5"><h4 class="fleft">Category Products Availabilty</h4><i class="ri-more-2-fill ms-5"></i></div>
                                 <div class="d-flex justify-content-between align-items-center gap-3 text-gray mt-2 "><h6> <span class="rounded-circle ps-2 pe-2 me-2 bg-success"></span> Available</h6> <h6><span class="rounded-circle ps-2 pe-2 me-2 bg-info"></span>Stock Limited</h6> <h6><span class="rounded-circle ps-2 pe-2 me-2 bg-warning"></span>Unavailable</h6></div>
                                 <div class="d-flex justify-content-between align-items-center gap-3 text-gray mt-2 "><h6>Categories</h6> <h6 class="ms-4">Code</h6> <h6>Status</h6></div>
